@@ -24,12 +24,8 @@ class Solution {
             return;
         }
         for(int i = 0; i<coins.length; i++){
-            if(boxes[i] != 1){
-                boxes[i] = 1;
                 generatePermutations(boxes, coins, idx + 1, asf + coins[i] + " ", amt - coins[i]);
-                boxes[i] = 0;
-            }
-            
+               
         }
 
     }
